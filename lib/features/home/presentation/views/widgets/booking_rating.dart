@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:my_bookly/core/styles.dart';
+import 'package:my_bookly/core/utils/styles.dart';
 
 class BookRating extends StatelessWidget {
   const BookRating({super.key});

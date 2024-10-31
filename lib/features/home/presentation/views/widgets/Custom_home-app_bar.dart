@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:my_bookly/features/home/presentation/views/widgets/Custom_icon.dart';
 
-class CustomAppBar extends StatelessWidget {
-  const CustomAppBar({super.key, required this.title, required this.icon});
+class CustomHomeAppBar extends StatelessWidget {
+  const CustomHomeAppBar({super.key, required this.title, required this.icon});
   final String title;
   final IconData icon;
 

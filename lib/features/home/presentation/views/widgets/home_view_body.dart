@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:my_bookly/core/styles.dart';
-import 'package:my_bookly/features/home/presentation/views/widgets/Custom_app_bar.dart';
+import 'package:my_bookly/core/utils/styles.dart';
+import 'package:my_bookly/features/home/presentation/views/widgets/Custom_home-app_bar.dart';
 import 'package:my_bookly/features/home/presentation/views/widgets/Featured_List_view_items.dart';
-import 'package:my_bookly/features/home/presentation/views/widgets/best_Seller_list_view_item.dart';
 import 'package:my_bookly/features/home/presentation/views/widgets/best_seller_list_view.dart';
 
 class HomeViewBody extends StatelessWidget {
@@ -19,7 +18,7 @@ class HomeViewBody extends StatelessWidget {
             children: [
               Padding(
                 padding: EdgeInsets.symmetric(horizontal: 30),
-                child: CustomAppBar(
+                child: CustomHomeAppBar(
                     title: 'BOOKLY', icon: FontAwesomeIcons.magnifyingGlass),
               ),
               FeaturedBooksListItems(),
