@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:my_bookly/features/home/presentation/views/widgets/Custom_icon.dart';
+import 'package:go_router/go_router.dart';
+import 'package:my_bookly/core/utils/app_router.dart';
 
 class CustomHomeAppBar extends StatelessWidget {
   const CustomHomeAppBar({super.key, required this.title, required this.icon});
@@ -21,9 +22,11 @@ class CustomHomeAppBar extends StatelessWidget {
             ),
           ),
           const Spacer(),
-          CustomIcon(
-            icon: icon,
-          ),
+          IconButton(
+              onPressed: () {
+                GoRouter.of(context).push(AppRouter.kSearchView);
+              },
+              icon: Icon(icon))
         ],
       ),
     );
