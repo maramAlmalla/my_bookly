@@ -17,7 +17,7 @@ class CustomHomeAppBar extends StatelessWidget {
             style: const TextStyle(
               color: Colors.black,
               fontSize: 28,
-              fontWeight: FontWeight.bold,
+              fontWeight: FontWeight.w900,
             ),
           ),
           const Spacer(),
